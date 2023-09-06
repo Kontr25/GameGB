@@ -1,3 +1,4 @@
+using System;
 using PlayFab;
 using PlayFab.ClientModels;
 using TMPro;
@@ -6,11 +7,13 @@ using UnityEngine.UI;
 
 public class PlayFabLogin : MonoBehaviour
 {
+    private const string _authGuidKey = "auth_guid_key";
     [SerializeField] private Button _connectButton;
     [SerializeField] private TMP_Text _connectedStatusText;
 
     private bool _isConnected = false;
     private LoginWithCustomIDRequest request;
+    private string id;
 
     private void Start()
     {
@@ -22,8 +25,11 @@ public class PlayFabLogin : MonoBehaviour
         }
         
         CheckConnectedStatus();
+
+        var needCreation = PlayerPrefs.HasKey(_authGuidKey);
+        id = PlayerPrefs.GetString(_authGuidKey, Guid.NewGuid().ToString());
         
-        request = new LoginWithCustomIDRequest { CustomId = "Player 1", CreateAccount = true };
+        request = new LoginWithCustomIDRequest { CustomId = id, CreateAccount = !needCreation };
     }
 
     private void OnDestroy()
@@ -38,7 +44,11 @@ public class PlayFabLogin : MonoBehaviour
 
     private void Connect()
     {
-        PlayFabClientAPI.LoginWithCustomID(request, OnLoginSuccess, OnLoginFailure);
+        PlayFabClientAPI.LoginWithCustomID(request, result =>
+        {
+            PlayerPrefs.SetString(_authGuidKey, id);
+            OnLoginSuccess(result);
+        }, OnLoginFailure);
     }
     private void OnLoginSuccess(LoginResult result)
     {
