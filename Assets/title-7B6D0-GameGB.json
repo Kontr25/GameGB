@@ -1,0 +1,96 @@
+{
+  "CatalogVersion": "GameGB",
+  "Catalog": [
+    {
+      "ItemId": "orange_skin_id",
+      "ItemClass": "skins",
+      "CatalogVersion": "GameGB",
+      "DisplayName": "Orange skin",
+      "Description": null,
+      "VirtualCurrencyPrices": {
+        "WC": 20
+      },
+      "RealCurrencyPrices": {},
+      "Tags": [
+        "\"skin",
+        "orange\""
+      ],
+      "CustomData": null,
+      "Consumable": {
+        "UsageCount": null,
+        "UsagePeriod": null,
+        "UsagePeriodGroup": null
+      },
+      "Container": null,
+      "Bundle": null,
+      "CanBecomeCharacter": false,
+      "IsStackable": false,
+      "IsTradable": true,
+      "ItemImageUrl": null,
+      "IsLimitedEdition": false,
+      "InitialLimitedEditionCount": 0,
+      "ActivatedMembership": null
+    },
+    {
+      "ItemId": "blue_skin_id",
+      "ItemClass": "skins",
+      "CatalogVersion": "GameGB",
+      "DisplayName": "Blue skin",
+      "Description": null,
+      "VirtualCurrencyPrices": {
+        "WC": 20
+      },
+      "RealCurrencyPrices": {},
+      "Tags": [
+        "\"skin",
+        "blue\""
+      ],
+      "CustomData": null,
+      "Consumable": {
+        "UsageCount": null,
+        "UsagePeriod": null,
+        "UsagePeriodGroup": null
+      },
+      "Container": null,
+      "Bundle": null,
+      "CanBecomeCharacter": false,
+      "IsStackable": false,
+      "IsTradable": true,
+      "ItemImageUrl": null,
+      "IsLimitedEdition": false,
+      "InitialLimitedEditionCount": 0,
+      "ActivatedMembership": null
+    },
+    {
+      "ItemId": "green_skin_id",
+      "ItemClass": "skins",
+      "CatalogVersion": "GameGB",
+      "DisplayName": "Green Skin",
+      "Description": null,
+      "VirtualCurrencyPrices": {
+        "WC": 20
+      },
+      "RealCurrencyPrices": {},
+      "Tags": [
+        "\"skin",
+        "green\""
+      ],
+      "CustomData": null,
+      "Consumable": {
+        "UsageCount": null,
+        "UsagePeriod": null,
+        "UsagePeriodGroup": null
+      },
+      "Container": null,
+      "Bundle": null,
+      "CanBecomeCharacter": false,
+      "IsStackable": false,
+      "IsTradable": true,
+      "ItemImageUrl": null,
+      "IsLimitedEdition": false,
+      "InitialLimitedEditionCount": 0,
+      "ActivatedMembership": null
+    }
+  ],
+  "DropTables": []
+}
