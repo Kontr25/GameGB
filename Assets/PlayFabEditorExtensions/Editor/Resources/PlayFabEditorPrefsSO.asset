@@ -20,5 +20,5 @@ MonoBehaviour:
   EdExPath: 
   LocalCloudScriptPath: E:/GitHub/GameGB/Assets/PlayFabEditorExtensions/Editor/Resources/.CloudScript.js
   PanelIsShown: 0
-  curMainMenuIdx: 1
-  curSubMenuIdx: 2
+  curMainMenuIdx: 2
+  curSubMenuIdx: 0
